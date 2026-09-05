@@ -9,7 +9,7 @@ export const siteConfig = {
   // Informações de Contato e Marca
   name: "Daniel Faluchi",
   profession: "Criação de Landing Pages",
-  whatsappUrl: "https://w.app/shpfsu",
+  whatsappUrl: "https://wa.me/5511948739129",
   year: 2026,
   status: "Disponível para novos projetos",
 
