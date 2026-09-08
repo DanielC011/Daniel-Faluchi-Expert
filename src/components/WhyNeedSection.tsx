@@ -8,32 +8,31 @@ import {
   Layers, 
   TrendingUp, 
   Clock, 
-  ArrowDownCircle, 
   Sparkles 
 } from 'lucide-react';
 
 const iconMap: Record<string, React.ReactNode> = {
-  ShieldCheck: <ShieldCheck className="h-6 w-6 text-blue-400" />,
-  Compass: <Compass className="h-6 w-6 text-blue-400" />,
-  Award: <Award className="h-6 w-6 text-blue-400" />,
-  Layers: <Layers className="h-6 w-6 text-blue-400" />,
-  TrendingUp: <TrendingUp className="h-6 w-6 text-blue-400" />,
-  Clock: <Clock className="h-6 w-6 text-blue-400" />,
+  ShieldCheck: <ShieldCheck className="h-6 w-6 text-[#60A5FA]" />,
+  Compass: <Compass className="h-6 w-6 text-[#60A5FA]" />,
+  Award: <Award className="h-6 w-6 text-[#60A5FA]" />,
+  Layers: <Layers className="h-6 w-6 text-[#60A5FA]" />,
+  TrendingUp: <TrendingUp className="h-6 w-6 text-[#60A5FA]" />,
+  Clock: <Clock className="h-6 w-6 text-[#60A5FA]" />,
 };
 
 export const WhyNeedSection: React.FC = () => {
   return (
-    <section id="por-que-preciso" className="relative border-t border-zinc-900 bg-[#050505] py-16 sm:py-24">
+    <section id="por-que-preciso" className="relative border-t border-zinc-800/80 bg-[#08090D] py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         
         {/* Section Heading */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-blue-500">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#60A5FA]">
             Diagnóstico do Negócio
           </span>
           <h2 
             id="why-need-headline"
-            className="mt-2 font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tighter"
+            className="mt-2 font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#F8FAFC] tracking-tighter"
           >
             {siteConfig.whyNeed.headline}
           </h2>
@@ -48,7 +47,7 @@ export const WhyNeedSection: React.FC = () => {
             <div 
               key={index}
               id={`situation-item-${index + 1}`}
-              className="flex items-start gap-3.5 rounded-2xl border border-zinc-800 bg-zinc-900/50 p-4 transition-all hover:border-zinc-700"
+              className="flex items-start gap-3.5 rounded-2xl border border-zinc-800 bg-[#151821] p-4 transition-all hover:border-zinc-700"
             >
               <div className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md bg-amber-500/10 text-amber-400">
                 <AlertCircle className="h-4 w-4" />
@@ -63,10 +62,10 @@ export const WhyNeedSection: React.FC = () => {
         {/* The Solution Bridge Banner */}
         <div 
           id="solution-bridge-banner"
-          className="mt-8 rounded-2xl bg-blue-600 p-6 sm:p-8 text-center text-white shadow-xl"
+          className="mt-8 rounded-2xl bg-gradient-to-r from-[#151821] via-[#1A2030] to-[#151821] border border-[#2563FF]/40 p-6 sm:p-8 text-center text-white shadow-xl"
         >
           <div className="mx-auto max-w-2xl">
-            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-blue-100 mb-2">
+            <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#60A5FA] mb-2">
               <Sparkles className="h-4 w-4" />
               A Solução Estruturada
             </span>
@@ -85,13 +84,13 @@ export const WhyNeedSection: React.FC = () => {
             <div
               key={card.id}
               id={card.id}
-              className="group relative rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 transition-all duration-200 hover:-translate-y-1 hover:border-zinc-700 hover:bg-zinc-900"
+              className="group relative rounded-2xl border border-zinc-800 bg-[#151821] p-6 transition-all duration-200 hover:-translate-y-1 hover:border-[#2563FF]/50"
             >
-              <div className="mb-4 inline-flex rounded-xl bg-zinc-800 p-3 border border-zinc-700/60 transition-colors group-hover:border-blue-500/40 group-hover:bg-blue-600/10">
+              <div className="mb-4 inline-flex rounded-xl bg-[#08090D] p-3 border border-zinc-800 transition-colors group-hover:border-[#2563FF]/40 group-hover:bg-[#2563FF]/10">
                 {iconMap[card.icon]}
               </div>
 
-              <h3 className="font-heading text-lg font-bold text-white group-hover:text-blue-400 transition-colors">
+              <h3 className="font-heading text-lg font-bold text-white group-hover:text-[#60A5FA] transition-colors">
                 {card.title}
               </h3>
 

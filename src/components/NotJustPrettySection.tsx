@@ -13,30 +13,30 @@ import {
 } from 'lucide-react';
 
 const pillarIcons = [
-  <Layers className="h-5 w-5 text-blue-400" />,
-  <Eye className="h-5 w-5 text-blue-400" />,
-  <CheckCircle2 className="h-5 w-5 text-blue-400" />,
-  <Smartphone className="h-5 w-5 text-blue-400" />,
-  <MousePointerClick className="h-5 w-5 text-blue-400" />,
-  <HelpCircle className="h-5 w-5 text-blue-400" />,
-  <MessageCircle className="h-5 w-5 text-blue-400" />,
-  <Compass className="h-5 w-5 text-blue-400" />,
+  <Layers className="h-5 w-5 text-[#60A5FA]" />,
+  <Eye className="h-5 w-5 text-[#60A5FA]" />,
+  <CheckCircle2 className="h-5 w-5 text-[#60A5FA]" />,
+  <Smartphone className="h-5 w-5 text-[#60A5FA]" />,
+  <MousePointerClick className="h-5 w-5 text-[#60A5FA]" />,
+  <HelpCircle className="h-5 w-5 text-[#60A5FA]" />,
+  <MessageCircle className="h-5 w-5 text-[#60A5FA]" />,
+  <Compass className="h-5 w-5 text-[#60A5FA]" />,
 ];
 
 export const NotJustPrettySection: React.FC = () => {
   return (
-    <section id="nao-e-apenas-bonita" className="relative border-t border-zinc-900 bg-[#050505] py-16 sm:py-24">
+    <section id="nao-e-apenas-bonita" className="relative border-t border-zinc-800/80 bg-[#08090D] py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-zinc-500">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#60A5FA]">
             Design com Propósito Estratégico
           </span>
           
           <h2 
             id="not-just-pretty-headline"
-            className="mt-3 font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tighter"
+            className="mt-3 font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#F8FAFC] tracking-tighter"
           >
             {siteConfig.notJustPretty.headline}
           </h2>
@@ -55,9 +55,9 @@ export const NotJustPrettySection: React.FC = () => {
             <div
               key={index}
               id={`pillar-card-${index + 1}`}
-              className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5 transition-colors hover:border-zinc-700"
+              className="rounded-2xl border border-zinc-800 bg-[#151821] p-5 transition-colors hover:border-[#2563FF]/50"
             >
-              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600/10 border border-blue-500/20">
+              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-[#2563FF]/10 border border-[#2563FF]/20">
                 {pillarIcons[index % pillarIcons.length]}
               </div>
               <h3 className="font-heading text-base font-bold text-white">
@@ -73,15 +73,15 @@ export const NotJustPrettySection: React.FC = () => {
         {/* Highlight Quote Box */}
         <div 
           id="quote-highlight-box"
-          className="relative mt-12 rounded-2xl bg-blue-600 p-6 sm:p-10 text-center text-white shadow-xl"
+          className="relative mt-12 rounded-2xl bg-gradient-to-r from-[#151821] via-[#1A2030] to-[#151821] border border-[#2563FF]/40 p-6 sm:p-10 text-center text-white shadow-xl"
         >
-          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white mb-4">
+          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full bg-[#2563FF]/20 text-[#60A5FA] mb-4">
             <Quote className="h-5 w-5" />
           </div>
           <p className="mx-auto max-w-2xl font-heading text-lg sm:text-2xl font-bold text-white leading-relaxed">
             “{siteConfig.notJustPretty.highlight}”
           </p>
-          <span className="mt-4 inline-block text-xs uppercase tracking-widest text-blue-100 font-bold">
+          <span className="mt-4 inline-block text-xs uppercase tracking-widest text-[#60A5FA] font-bold">
             {siteConfig.name} • {siteConfig.profession}
           </span>
         </div>

@@ -13,12 +13,11 @@ import { CtaIntermediate } from './components/CtaIntermediate';
 import { FaqSection } from './components/FaqSection';
 import { CtaFinal } from './components/CtaFinal';
 import { Footer } from './components/Footer';
-import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
-    <div id="landing-page-root" className="min-h-screen bg-[#050505] text-zinc-100 flex flex-col pb-16 md:pb-0 selection:bg-blue-600 selection:text-white">
-      {/* 0. Header with Brand & Direct WhatsApp */}
+    <div id="landing-page-root" className="min-h-screen bg-[#08090D] text-[#F8FAFC] flex flex-col selection:bg-[#2563FF] selection:text-white">
+      {/* 0. Header with Brand & Discrete WhatsApp & Instagram */}
       <Header />
 
       <main className="flex-1">
@@ -61,9 +60,6 @@ export default function App() {
 
       {/* 13. RODAPÉ */}
       <Footer />
-
-      {/* FLOATING / STICKY WHATSAPP CTA */}
-      <FloatingWhatsApp />
     </div>
   );
 }

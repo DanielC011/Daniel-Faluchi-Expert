@@ -13,29 +13,29 @@ import {
 
 export const WhatIsLandingPage: React.FC = () => {
   return (
-    <section id="o-que-e-uma-landing-page" className="relative border-t border-zinc-900 bg-[#050505] py-16 sm:py-24">
+    <section id="o-que-e-uma-landing-page" className="relative border-t border-zinc-800/80 bg-[#08090D] py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-blue-400">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#60A5FA]/30 bg-[#2563FF]/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#60A5FA]">
             <HelpCircle className="h-3.5 w-3.5" />
             <span>Conceito Fundamental</span>
           </div>
 
           <h2 
             id="what-is-headline"
-            className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tighter"
+            className="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#F8FAFC] tracking-tighter"
           >
             {siteConfig.whatIs.headline}
           </h2>
 
-          <div className="mt-6 rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 sm:p-8 shadow-xl">
+          <div className="mt-6 rounded-2xl border border-zinc-800 bg-[#151821] p-6 sm:p-8 shadow-xl">
             <p 
               id="what-is-definition"
               className="font-heading text-xl sm:text-2xl font-bold text-white leading-snug"
             >
-              “<span className="text-blue-400">{siteConfig.whatIs.description}</span>”
+              “<span className="text-[#60A5FA]">{siteConfig.whatIs.description}</span>”
             </p>
             <p className="mt-3 text-sm sm:text-base text-zinc-400 leading-relaxed">
               {siteConfig.whatIs.summary}
@@ -59,13 +59,13 @@ export const WhatIsLandingPage: React.FC = () => {
             {/* Step 1: Visitante */}
             <div 
               id="flow-step-visitante"
-              className="relative rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5 transition-all hover:border-zinc-700"
+              className="relative rounded-2xl border border-zinc-800 bg-[#151821] p-5 transition-all hover:border-zinc-700"
             >
               <div className="flex items-center justify-between">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-zinc-800 text-xs font-bold font-mono text-zinc-300 border border-zinc-700">
                   01
                 </span>
-                <div className="rounded-xl bg-blue-600/10 p-2 text-blue-400 border border-blue-500/20">
+                <div className="rounded-xl bg-[#2563FF]/10 p-2 text-[#60A5FA] border border-[#2563FF]/20">
                   <Users className="h-5 w-5" />
                 </div>
               </div>
@@ -80,13 +80,13 @@ export const WhatIsLandingPage: React.FC = () => {
             {/* Step 2: Landing Page */}
             <div 
               id="flow-step-landing-page"
-              className="relative rounded-2xl border border-blue-500/50 bg-blue-600/10 p-5 shadow-lg transition-all"
+              className="relative rounded-2xl border border-[#2563FF]/50 bg-[#2563FF]/10 p-5 shadow-lg transition-all"
             >
               <div className="flex items-center justify-between">
-                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-600 text-xs font-bold font-mono text-white">
+                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#2563FF] text-xs font-bold font-mono text-white">
                   02
                 </span>
-                <div className="rounded-xl bg-blue-600/20 p-2 text-blue-400 border border-blue-500/30">
+                <div className="rounded-xl bg-[#2563FF]/20 p-2 text-[#60A5FA] border border-[#2563FF]/30">
                   <Layout className="h-5 w-5" />
                 </div>
               </div>
@@ -94,7 +94,7 @@ export const WhatIsLandingPage: React.FC = () => {
                 <h3 className="font-heading text-lg font-bold text-white">
                   Landing Page
                 </h3>
-                <span className="rounded-full bg-blue-600 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
+                <span className="rounded-full bg-[#2563FF] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
                   Foco Total
                 </span>
               </div>
@@ -106,13 +106,13 @@ export const WhatIsLandingPage: React.FC = () => {
             {/* Step 3: Contato */}
             <div 
               id="flow-step-contato"
-              className="relative rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5 transition-all hover:border-zinc-700"
+              className="relative rounded-2xl border border-zinc-800 bg-[#151821] p-5 transition-all hover:border-zinc-700"
             >
               <div className="flex items-center justify-between">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-zinc-800 text-xs font-bold font-mono text-zinc-300 border border-zinc-700">
                   03
                 </span>
-                <div className="rounded-xl bg-blue-600/10 p-2 text-blue-400 border border-blue-500/20">
+                <div className="rounded-xl bg-[#2563FF]/10 p-2 text-[#60A5FA] border border-[#2563FF]/20">
                   <MessageSquare className="h-5 w-5" />
                 </div>
               </div>
@@ -127,13 +127,13 @@ export const WhatIsLandingPage: React.FC = () => {
             {/* Step 4: Cliente */}
             <div 
               id="flow-step-cliente"
-              className="relative rounded-2xl border border-zinc-800 bg-zinc-900/50 p-5 transition-all hover:border-zinc-700"
+              className="relative rounded-2xl border border-zinc-800 bg-[#151821] p-5 transition-all hover:border-zinc-700"
             >
               <div className="flex items-center justify-between">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-zinc-800 text-xs font-bold font-mono text-zinc-300 border border-zinc-700">
                   04
                 </span>
-                <div className="rounded-xl bg-blue-600/10 p-2 text-blue-400 border border-blue-500/20">
+                <div className="rounded-xl bg-[#2563FF]/10 p-2 text-[#60A5FA] border border-[#2563FF]/20">
                   <CheckCircle className="h-5 w-5" />
                 </div>
               </div>
@@ -148,7 +148,7 @@ export const WhatIsLandingPage: React.FC = () => {
         </div>
 
         {/* Purposes Checklist / Tags */}
-        <div className="mt-12 rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 sm:p-8">
+        <div className="mt-12 rounded-2xl border border-zinc-800 bg-[#151821] p-6 sm:p-8">
           <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-800 pb-4">
             <div>
               <h3 className="font-heading text-base sm:text-lg font-bold text-white">
@@ -158,7 +158,7 @@ export const WhatIsLandingPage: React.FC = () => {
                 Uma página sob medida para o objetivo principal do seu negócio:
               </p>
             </div>
-            <span className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-blue-400">
+            <span className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-[#60A5FA]">
               <Sparkles className="h-3.5 w-3.5" />
               100% orientada a ação
             </span>
@@ -169,9 +169,9 @@ export const WhatIsLandingPage: React.FC = () => {
               <div
                 key={purpose.id}
                 id={purpose.id}
-                className="flex items-center gap-2.5 rounded-xl border border-zinc-800/80 bg-zinc-950/70 px-3.5 py-3 transition-colors hover:border-zinc-700"
+                className="flex items-center gap-2.5 rounded-xl border border-zinc-800/80 bg-[#08090D] px-3.5 py-3 transition-colors hover:border-[#60A5FA]/30"
               >
-                <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md bg-green-500/20 text-green-400 text-xs font-bold">
+                <div className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-md bg-emerald-500/20 text-emerald-400 text-xs font-bold">
                   ✓
                 </div>
                 <span className="text-xs sm:text-sm font-semibold text-zinc-200">
@@ -179,6 +179,29 @@ export const WhatIsLandingPage: React.FC = () => {
                 </span>
               </div>
             ))}
+          </div>
+
+          {/* Naturally Repositioned Explanation Section CTA */}
+          <div className="mt-8 pt-6 border-t border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-center sm:text-left">
+              <span className="text-sm font-bold text-white block">
+                Pronto para colocar sua oferta em destaque?
+              </span>
+              <span className="text-xs text-zinc-400">
+                Criamos a estrutura ideal para seu segmento. Atendimento direto com Daniel Faluchi.
+              </span>
+            </div>
+            <a
+              id="what-is-cta-btn"
+              href={siteConfig.whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-[#2563FF] hover:bg-blue-600 text-white px-6 py-3 text-xs sm:text-sm font-bold transition-all shadow-md shadow-[#2563FF]/20 active:scale-95 whitespace-nowrap"
+            >
+              <MessageSquare className="h-4 w-4" />
+              <span>{siteConfig.whatIsCtaText}</span>
+              <ArrowRight className="h-4 w-4" />
+            </a>
           </div>
         </div>
 

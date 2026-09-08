@@ -1,24 +1,84 @@
 /**
- * CONFIGURAÇÃO GERAL DA LANDING PAGE
- * 
- * Daniel Faluchi - Criação de Landing Pages
- * Altere as informações abaixo facilmente para personalizar a página.
+ * =======================================================================
+ * FALUCHI STUDIO - CONFIGURAÇÕES GERAIS DA LANDING PAGE
+ * =======================================================================
+ * Altere facilmente as informações abaixo para personalizar o site.
  */
+
+// 1. INFORMAÇÕES PESSOAIS E MARCA
+export const NOME_PESSOAL = "Daniel Faluchi";
+export const MARCA = "FALUCHI STUDIO";
+export const PROFISSAO = "Criação de Landing Pages";
+export const STATUS_DISPONIBILIDADE = "Disponível para novos projetos";
+export const ANO = 2026;
+
+// 2. CONTATOS E REDES SOCIAIS
+export const WHATSAPP = "https://wa.me/5521989380500?text=Olá%2C%20quero%20fazer%20um%20orçamento%21%21";
+export const INSTAGRAM = "https://www.instagram.com/faluchi.studio/";
+export const EMAIL = "contato@faluchistudio.com";
+
+// 3. IMAGENS E ASSETS (Fácil substituição)
+export const ASSETS = {
+  logo: "https://i.imgur.com/EPGOImI.jpeg", // Logo oficial FALUCHI STUDIO
+  logoFallback: "/assets/logo/logo.png",
+  images: {
+    hero: "/assets/images/hero.webp",
+    projeto01: "/assets/images/projeto-01.webp",
+    projeto02: "/assets/images/projeto-02.webp",
+    projeto03: "/assets/images/projeto-03.webp",
+  },
+  mockups: {
+    desktop: "/assets/mockups/desktop.webp",
+    mobile: "/assets/mockups/mobile.webp",
+  },
+};
+
+// 4. PALETA DE CORES DA IDENTIDADE VISUAL
+export const CORES = {
+  black: "#08090D",        // Fundo principal (Preto profundo)
+  surface: "#151821",      // Superfícies secundárias / Cards
+  white: "#F8FAFC",        // Branco principal (FALUCHI / Textos)
+  electricBlue: "#2563FF", // Azul elétrico (STUDIO / Botões / CTAs)
+  lightBlue: "#60A5FA",    // Azul claro (Glow / Bordas / Detalhes)
+  gray: "#94A3B8",         // Textos secundários (Cinza)
+};
+
+// 5. TEXTOS DOS CTAS
+export const CTAS = {
+  header: "Solicitar orçamento",
+  hero: "Quero minha Landing Page",
+  whatIs: "Solicitar orçamento",
+  intermediate: "Quero criar minha Landing Page",
+  howItWorks: "Quero conversar sobre meu projeto",
+  final: "Quero minha Landing Page",
+  instagram: "Acessar Instagram",
+  microcopyBudget: "Orçamento sem compromisso • Atendimento direto",
+  microcopyNoCommitment: "Sem compromisso.",
+};
 
 export const siteConfig = {
   // Informações de Contato e Marca
-  name: "Daniel Faluchi",
-  profession: "Criação de Landing Pages",
-  whatsappUrl: "https://wa.me/5511948739129?text=Olá%2C%20quero%20fazer%20um%20orçamento%21%21",
-  year: 2026,
-  status: "Disponível para novos projetos",
+  name: NOME_PESSOAL,
+  brand: MARCA,
+  profession: PROFISSAO,
+  whatsappUrl: WHATSAPP,
+  instagramUrl: INSTAGRAM,
+  email: EMAIL,
+  assets: ASSETS,
+  colors: CORES,
+  ctas: CTAS,
+  year: ANO,
+  status: STATUS_DISPONIBILIDADE,
 
   // Textos dos CTAs Principais
-  primaryCtaText: "Quero minha Landing Page",
-  intermediateCtaText: "Solicitar orçamento no WhatsApp",
-  howItWorksCtaText: "Quero conversar sobre meu projeto",
-  microcopyBudget: "Orçamento sem compromisso • Atendimento direto",
-  microcopyNoCommitment: "Sem compromisso.",
+  primaryCtaText: CTAS.hero,
+  headerCtaText: CTAS.header,
+  whatIsCtaText: CTAS.whatIs,
+  intermediateCtaText: CTAS.intermediate,
+  howItWorksCtaText: CTAS.howItWorks,
+  finalCtaText: CTAS.final,
+  microcopyBudget: CTAS.microcopyBudget,
+  microcopyNoCommitment: CTAS.microcopyNoCommitment,
 
   // Hero Section
   hero: {

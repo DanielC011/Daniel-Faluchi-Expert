@@ -1,53 +1,65 @@
 import React from 'react';
 import { siteConfig } from '../config';
-import { MessageCircle, Sparkles } from 'lucide-react';
+import { MessageCircle, Instagram } from 'lucide-react';
 
 export const Header: React.FC = () => {
   return (
-    <header id="main-header" className="sticky top-0 z-40 w-full border-b border-zinc-900 bg-[#050505]/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+    <header id="main-header" className="relative w-full border-b border-zinc-800/80 bg-[#08090D]">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3.5 sm:px-6">
         
-        {/* Brand Name & Title */}
+        {/* Brand Logo & Name */}
         <div id="header-brand" className="flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-blue-600 font-bold text-white text-xs sm:text-sm shadow-md">
-            DF
-          </div>
+          <img
+            src={siteConfig.assets.logo}
+            alt="FALUCHI STUDIO"
+            className="h-9 w-9 sm:h-10 sm:w-10 rounded-lg object-contain border border-[#60A5FA]/30 bg-[#151821] shadow-md"
+            onError={(e) => {
+              // Fallback if network issue with image
+              const target = e.currentTarget;
+              target.style.display = 'none';
+            }}
+          />
           <div>
-            <span className="block font-heading text-base font-bold text-white tracking-tight">
-              {siteConfig.name}
-            </span>
-            <span className="block text-[11px] font-semibold uppercase tracking-wider text-zinc-500">
+            <div className="flex items-center gap-1.5 font-heading text-base sm:text-lg font-extrabold tracking-tight">
+              <span className="text-[#F8FAFC]">FALUCHI</span>
+              <span className="text-[#2563FF]">STUDIO</span>
+            </div>
+            <span className="block text-[11px] font-medium tracking-wide text-zinc-400">
               {siteConfig.profession}
             </span>
           </div>
         </div>
 
-        {/* Status Pill & WhatsApp CTA */}
-        <div id="header-actions" className="flex items-center gap-2 sm:gap-4">
-          <div 
-            id="header-availability-badge" 
-            className="hidden md:flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/90 px-3.5 py-1 text-xs font-medium text-zinc-300"
+        {/* Actions: Discrete Instagram & Discrete CTA (Solicitar orçamento) */}
+        <div id="header-actions" className="flex items-center gap-2 sm:gap-3">
+          {/* Discrete Instagram Link */}
+          <a
+            id="header-instagram-btn"
+            href={siteConfig.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full border border-zinc-800 bg-[#151821] hover:border-[#60A5FA]/50 text-zinc-300 hover:text-white px-3 py-1.5 text-xs font-semibold transition-colors"
+            aria-label="Acessar Instagram @faluchi.studio"
           >
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75"></span>
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-600"></span>
-            </span>
-            {siteConfig.status}
-          </div>
+            <Instagram className="h-3.5 w-3.5 text-[#60A5FA]" />
+            <span className="hidden md:inline">Instagram</span>
+          </a>
 
+          {/* Discrete WhatsApp CTA */}
           <a
             id="header-whatsapp-btn"
             href={siteConfig.whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-white text-black hover:bg-blue-600 hover:text-white px-5 py-2 text-xs sm:text-sm font-bold transition-all duration-200 shadow-md active:scale-95"
-            aria-label="Falar com Daniel Faluchi no WhatsApp"
+            className="group inline-flex items-center gap-2 rounded-full border border-[#2563FF]/50 bg-[#151821] hover:bg-[#2563FF] text-[#F8FAFC] px-4 sm:px-5 py-1.5 sm:py-2 text-xs sm:text-sm font-bold transition-all duration-200 shadow-sm active:scale-95"
+            aria-label="Solicitar orçamento no WhatsApp"
           >
-            <MessageCircle className="h-4 w-4" />
-            <span>Falar no WhatsApp</span>
+            <MessageCircle className="h-3.5 w-3.5 text-[#60A5FA] group-hover:text-white transition-colors" />
+            <span>{siteConfig.headerCtaText}</span>
           </a>
         </div>
       </div>
     </header>
   );
 };
+
